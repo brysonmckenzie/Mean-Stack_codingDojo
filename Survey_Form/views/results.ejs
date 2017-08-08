@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Results</title>
+</head>
+<body>
+    <fieldset style="width:500px;">
+        <legend>Results</legend>
+        <table>
+          <caption style="font:bold;">SUBMITTED INFORMATION</caption>
+          <tbody>
+             <tr><td>Name:</td><td><%= locals.name %></td></tr>
+            <tr><td>Dojo Location:</td><td><%= locals.location %></td></tr>
+            <tr><td>Favorite Langage:</td><td><%= locals.language %></td></tr>
+            <tr><td>Comment:</td><td><%= locals.comment %></td></tr> 
+          </tbody>
+        </table>
+
+        <form action="/goback">
+        <button type="submit">Go Back</button>
+        </form>
+    </fieldset>
+</body>
+</html>
