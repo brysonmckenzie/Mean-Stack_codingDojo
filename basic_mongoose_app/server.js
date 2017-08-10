@@ -8,7 +8,7 @@ mongoose.connect('mongodb://localhost/basic_mongoose_app');
 var UserSchema = new mongoose.Schema({
     name: String,
     age: Number
-})
+}, {timestamps: true});
 mongoose.model('User', UserSchema);
 var User = mongoose.model('User')
 
