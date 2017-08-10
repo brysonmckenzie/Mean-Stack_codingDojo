@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mongoose</title>
+</head>
+
+<body>
+    <h1>Lion King</h1>
+    <p><a href="#">Create a Lion</a></p>
+    <p>Pick the color of your lion and name it</p>
+
+<% for(var lion in lions){ %>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Color</th>
+                <th>Show</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <p>Name:
+                        <%= lions[lion].name %>
+                    </p>
+                </td>
+                <td>
+                    <p>Color:
+                        <%= lions[lion].color %>
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        <a href="/lions/<%=lions[lion].id%>"></a>
+                    </p>
+                </td>
+                <td>
+                    <form action="/lions/<%= lions[lion].id%>/delete " method="post">
+                        <input type="submit" value="Delete">
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+       
+    </table>
+    <% } %>
+</body>
+</html>

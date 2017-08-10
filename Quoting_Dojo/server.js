@@ -11,7 +11,7 @@ mongoose.connect("mongodb://localhost/quote_app");
 var QuoteSchema = new mongoose.Schema(
   {
     name: String,
-    quote: String
+    color: String
   },
   { timestamps: true }
 );
