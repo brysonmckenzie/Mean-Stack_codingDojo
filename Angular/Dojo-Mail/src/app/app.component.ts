@@ -1,0 +1,50 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  emails: Array<any> = [
+    {email: 'brysonmckenzie83@gmail.com', importance: false, subject: 'Whaddup', content: 'Where you at big fella.'},
+    {email: 'bmoneyu@gmail.com', importance: true, subject: '????', content: 'Where you at big fella, I called twice.'},
+    {email: 'adam@gmail.com', importance: false, subject: 'Final Notice', content: 'Last day for the fire sale!!!!'},
+    {email: 'johndoe@gmail.com', importance: true, subject: 'Im dead', content: 'Because the call me John Doe...I must be dead'},
+    {email: 'brysonmckenzie83@gmail.com', importance: true, subject: 'Whaddup', content: 'Where you at big fella.'},
+    {email: 'bmoneyu@gmail.com', importance: true, subject: '????', content: 'Where you at big fella, I called twice.'},
+    {email: 'adam@gmail.com', importance: false, subject: 'Final Notice', content: 'Last day for the fire sale!!!!'},
+    {email: 'johndoe@gmail.com', importance: true, subject: 'Im dead', content: 'Because the call me John Doe...I must be dead'},
+    {email: 'brysonmckenzie83@gmail.com', importance: true, subject: 'Whaddup', content: 'Where you at big fella.'},
+    {email: 'bmoneyu@gmail.com', importance: true, subject: '????', content: 'Where you at big fella, I called twice.'},
+    {email: 'adam@gmail.com', importance: false, subject: 'Final Notice', content: 'Last day for the fire sale!!!!'},
+    {email: 'johndoe@gmail.com', importance: true, subject: 'Im dead', content: 'Because the call me John Doe...I must be dead'},
+    {email: 'brysonmckenzie83@gmail.com', importance: true, subject: 'Whaddup', content: 'Where you at big fella.'},
+    {email: 'brysonmckenzie83@gmail.com', importance: false, subject: 'Whaddup', content: 'Where you at big fella.'},
+    {email: 'bmoneyu@gmail.com', importance: true, subject: '????', content: 'Where you at big fella, I called twice.'},
+    {email: 'adam@gmail.com', importance: false, subject: 'Final Notice', content: 'Last day for the fire sale!!!!'},
+    {email: 'johndoe@gmail.com', importance: true, subject: 'Im dead', content: 'Because the call me John Doe...I must be dead'},
+    {email: 'brysonmckenzie83@gmail.com', importance: true, subject: 'Whaddup', content: 'Where you at big fella.'},
+    {email: 'bmoneyu@gmail.com', importance: true, subject: '????', content: 'Where you at big fella, I called twice.'},
+    {email: 'adam@gmail.com', importance: false, subject: 'Final Notice', content: 'Last day for the fire sale!!!!'},
+    {email: 'johndoe@gmail.com', importance: true, subject: 'Im dead', content: 'Because the call me John Doe...I must be dead'},
+    {email: 'brysonmckenzie83@gmail.com', importance: true, subject: 'Whaddup', content: 'Where you at big fella.'},
+    {email: 'bmoneyu@gmail.com', importance: true, subject: '????', content: 'Where you at big fella, I called twice.'},
+    {email: 'adam@gmail.com', importance: false, subject: 'Final Notice', content: 'Last day for the fire sale!!!!'},
+    {email: 'johndoe@gmail.com', importance: true, subject: 'Im dead', content: 'Because the call me John Doe...I must be dead'},
+    {email: 'brysonmckenzie83@gmail.com', importance: true, subject: 'Whaddup', content: 'Where you at big fella.'},
+    {email: 'brysonmckenzie83@gmail.com', importance: false, subject: 'Whaddup', content: 'Where you at big fella.'},
+    {email: 'bmoneyu@gmail.com', importance: true, subject: '????', content: 'Where you at big fella, I called twice.'},
+    {email: 'adam@gmail.com', importance: false, subject: 'Final Notice', content: 'Last day for the fire sale!!!!'},
+    {email: 'johndoe@gmail.com', importance: true, subject: 'Im dead', content: 'Because the call me John Doe...I must be dead'},
+    {email: 'brysonmckenzie83@gmail.com', importance: true, subject: 'Whaddup', content: 'Where you at big fella.'},
+    {email: 'bmoneyu@gmail.com', importance: true, subject: '????', content: 'Where you at big fella, I called twice.'},
+    {email: 'adam@gmail.com', importance: false, subject: 'Final Notice', content: 'Last day for the fire sale!!!!'},
+    {email: 'johndoe@gmail.com', importance: true, subject: 'Im dead', content: 'Because the call me John Doe...I must be dead'},
+    {email: 'brysonmckenzie83@gmail.com', importance: true, subject: 'Whaddup', content: 'Where you at big fella.'},
+    {email: 'bmoneyu@gmail.com', importance: true, subject: '????', content: 'Where you at big fella, I called twice.'},
+    {email: 'adam@gmail.com', importance: false, subject: 'Final Notice', content: 'Last day for the fire sale!!!!'},
+    {email: 'johndoe@gmail.com', importance: true, subject: 'Im dead', content: 'Because the call me John Doe...I must be dead'},
+    {email: 'brysonmckenzie83@gmail.com', importance: true, subject: 'Whaddup', content: 'Where you at big fella.'},
+  ]
+};
