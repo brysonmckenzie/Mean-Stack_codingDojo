@@ -1,0 +1,26 @@
+.container{
+    margin: 0 auto;
+    width: 960px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.zones{
+    margin:auto;
+    width: 50%;
+    border: 3px solid;
+    padding:20px;
+}
+
+.bzone{
+    margin-left: 25%;
+}
+button {
+    background-color: #991C1C;
+    color: #FFFFFF;
+    margin-top:10px;
+}
+
+
