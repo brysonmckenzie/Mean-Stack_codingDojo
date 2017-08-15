@@ -21,6 +21,7 @@ export class AppComponent {
       this.time.setHours(this.time.getHours() - 2);
     }
     this.lastTimeZoneSelected = timezone;
+    console.log(timezone);
   }
 
 }

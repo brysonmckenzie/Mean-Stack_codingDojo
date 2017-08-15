@@ -1,26 +1,45 @@
-.container{
-    margin: 0 auto;
-    width: 960px;
+
+
+.container {
+font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  width: 800px;
+  background-color: slategrey;
+  height: 700px;
+  padding-top: 100px;
 }
 
 h1 {
-    text-align: center;
+  text-align: center;
+  color:whitesmoke;
 }
 
-.zones{
-    margin:auto;
-    width: 50%;
-    border: 3px solid;
-    padding:20px;
+.zones {
+  margin: auto;
+  width: 50%;
+  border: 5px solid white;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: grey;
 }
 
-.bzone{
-    margin-left: 25%;
+.bzone {
+  margin-left: 10%;
+  
 }
 button {
-    background-color: #991C1C;
-    color: #FFFFFF;
-    margin-top:10px;
+  background-color: rgba(0, 0, 255, 0.17);
+  color: #ffffff;
+  margin-top: 10px;
+  margin: 0px 10px 0px 10px; 
+  width: 50px;
+  height: 35px;
+  border-radius:5px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-
+.selected {
+  background-color: #6D0606;
+  width: 60px;
+  height: 55px;
+}
