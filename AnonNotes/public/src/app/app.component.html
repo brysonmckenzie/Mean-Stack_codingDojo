@@ -1,0 +1,16 @@
+<form #formData='ngForm' (submit)='createNote()'>
+  <input 
+    type="text"
+    name="content"
+    required
+    minlength="4"
+    [(ngModel)]="note.content"
+    #contentErrors = "ngModel"
+  >
+  <p *ngIf='content.errors'>{{contentErrors.errors.required}}</p>
+  <input 
+    type="submit"
+    value="Add Note"
+    [disabled]='!formData.valid'
+    >
+</form>

@@ -1,112 +1,90 @@
 <div class="container">
   <div class="header">
-    <h1>Registration</h1>
+    <h1>{{title}}</h1>
   </div>
-  <p id="valid" *ngIf="submitted">Thank you for registering {{user.firstName}}. We just sent you a confirmation email at {{user.email}}. All mail will be sent to {{user.address}}, {{user.city}}, {{user.state}}</p>
+  <p id="valid" *ngIf="submitted">Thank you for registering {{user.firstName}}. We just sent you a confirmation email at {{user.email}}. All mail will be
+    sent to {{user.address}}, {{user.city}}, {{user.state}}</p>
 
   <div class="account">
 
     <form #userForm="ngForm" (submit)="onSubmit()">
       <label>*First Name</label><br>
-      <input [(ngModel)]="user.firstname"  type="text" name="firstname" #firstname="ngModel" 
-      required 
-      minlength="2" 
-      maxlength="24">
+      <input [(ngModel)]="user.firstname" type="text" name="firstname" #firstname="ngModel" required minlength="2" maxlength="24">
 
       <p *ngIf="firstname.errors" class="errorMessage">
-          <span *ngIf="firstname.errors.required">First name is required</span>
-          <span *ngIf="firstname.errors.minlength && !firstname.errors.required">First name must be at least 2 letters.</span>
-        </p><br>
+        <span *ngIf="firstname.errors.required">First name is required</span>
+        <span *ngIf="firstname.errors.minlength && !firstname.errors.required">First name must be at least 2 letters.</span>
+      </p><br>
 
       <label>*Last Name</label><br>
-      <input [(ngModel)]="user.lastname" type="text" name="lastname" #lastname="ngModel" 
-      required 
-      minlength="4" 
-      maxlength="24">
+      <input [(ngModel)]="user.lastname" type="text" name="lastname" #lastname="ngModel" required minlength="4" maxlength="24">
 
       <p *ngIf="lastname.errors" class="errorMessage">
-          <span *ngIf="lastname.errors.required">Last name is required</span>
-          <span *ngIf="lastname.errors.minlength && !lastname.errors.required">Last name must be at least 2 letters.</span>
-        </p><br>
-      
+        <span *ngIf="lastname.errors.required">Last name is required</span>
+        <span *ngIf="lastname.errors.minlength && !lastname.errors.required">Last name must be at least 2 letters.</span>
+      </p><br>
+
 
       <label>*Email</label><br>
-      <input [(ngModel)]="user.email" type="text"  name="email"  #email="ngModel"  
-      required 
-      pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$">
+      <input [(ngModel)]="user.email" type="text" name="email" #email="ngModel" required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$">
 
       <p *ngIf="email.errors" class="errorMessage">
-          <span *ngIf="email.errors.required">Email is required</span>
-          <span *ngIf="email.errors.pattern && !email.errors.required">Email must be valid</span>
-        </p><br>
+        <span *ngIf="email.errors.required">Email is required</span>
+        <span *ngIf="email.errors.pattern && !email.errors.required">Email must be valid</span>
+      </p><br>
 
       <label>*Password</label><br>
-      <input [(ngModel)]="user.password" type="password"  name="password" #password="ngModel" 
-      required
-      pattern="^([a-zA-Z0-9@*#]{8,15})$">
+      <input [(ngModel)]="user.password" type="password" name="password" #password="ngModel" required pattern="^([a-zA-Z0-9@*#]{8,15})$">
 
       <p *ngIf="password.errors" class="errorMessage">
-          <span *ngIf="password.errors.required">Password is required</span>
-           <span *ngIf="password.errors.pattern && !password.errors.required">Password must be valid</span>
-        </p><br>
+        <span *ngIf="password.errors.required">Password is required</span>
+        <span *ngIf="password.errors.pattern && !password.errors.required">Password must be valid</span>
+      </p><br>
 
       <label>*Password Confirmation</label><br>
-      <input [(ngModel)]="user.passwordConf" type="password"  name="passwordConf" #passwordConf="ngModel" 
-      required
-      pattern="^([a-zA-Z0-9@*#]{8,15})$">
+      <input [(ngModel)]="user.passwordConf" type="password" name="passwordConf" #passwordConf="ngModel" required pattern="^([a-zA-Z0-9@*#]{8,15})$">
 
       <p *ngIf="passwordConf.errors" class="errorMessage">
-          <span *ngIf="passwordConf.errors.required">Confirm password</span>
-          <span *ngIf="user.passwordConf !== user.password && !passwordConf.errors.required">Passwords must match</span>
-        </p><br>
+        <span *ngIf="passwordConf.errors.required">Confirm password</span>
+        <span *ngIf="user.passwordConf !== user.password && !passwordConf.errors.required">Passwords must match</span>
+      </p><br>
 
       <label>*Street Address</label><br>
-      <input [(ngModel)]="user.address" type="text" name="address" #address="ngModel" 
-      required 
-      minlength="5" 
-      maxlength="24">
+      <input [(ngModel)]="user.address" type="text" name="address" #address="ngModel" required minlength="5" maxlength="24">
 
       <p *ngIf="address.errors" class="errorMessage">
-          <span *ngIf="address.errors.required">Address is required</span>
-          <span *ngIf="address.errors.minlength && !address.errors.required">First name must be at least 5 characters.</span>
-        </p><br>
+        <span *ngIf="address.errors.required">Address is required</span>
+        <span *ngIf="address.errors.minlength && !address.errors.required">First name must be at least 5 characters.</span>
+      </p><br>
 
       <label>Unit/Apt #</label><br>
-      <input [(ngModel)]="user.unit" type="text" name="unit" #unit="ngModel" ><br>
+      <input [(ngModel)]="user.unit" type="text" name="unit" #unit="ngModel"><br>
 
       <label>*City</label><br>
-      <input [(ngModel)]="user.city" type="text" name="city" #firstname="ngModel" #city="ngModel" 
-      required 
-      minlength="3" 
-      maxlength="24">
+      <input [(ngModel)]="user.city" type="text" name="city" #firstname="ngModel" #city="ngModel" required minlength="3" maxlength="24">
 
       <p *ngIf="city.errors" class="errorMessage">
-          <span *ngIf="city.errors.required">City is required</span>
-          <span *ngIf="city.errors.minlength && !city.errors.required">First name must be at least 2 letters.</span>
-        </p><br>
+        <span *ngIf="city.errors.required">City is required</span>
+        <span *ngIf="city.errors.minlength && !city.errors.required">First name must be at least 2 letters.</span>
+      </p><br>
 
       <label>State</label><br>
       <select>
           <option *ngFor="let state of states" value="{{state}}">{{state}}</option>
         </select><br><br>
 
-        <label>Feeling Lucky?</label>
-        <p>Yes</p> <input 
-        type="radio" 
-        name="lucky" 
-        value="Yes" 
-        checked
-      >
-      <p>No</p><input 
-        type="radio" 
-        name="lucky" 
-        value="No" 
-      ><br><br>
-    
-        <input type="submit" value="Register" [disabled]="!userForm.valid">  
-  </form>
+      <label>Feeling Lucky?</label>
+      <p>Yes</p> <input type="radio" name="lucky" value="Yes" checked>
+      <p>No</p><input type="radio" name="lucky" value="No"><br><br>
 
+      <input type="submit" value="Register" [disabled]="!userForm.valid">
+    </form>
 
-</div>
+      
 
+  </div>
+  <div class="json">
+      <p>{{ user | json }}</p>
+      
+  </div>   
 </div>
