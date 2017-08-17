@@ -1,0 +1,9 @@
+.container{
+    padding: 0px 20px 0px 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    opacity: 0.75;
+}
+
+.main-content{
+    display: block;
+}
