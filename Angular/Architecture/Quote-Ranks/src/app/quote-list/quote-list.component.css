@@ -1,0 +1,47 @@
+div.quote {
+    width: 710px;
+    border: 1px solid ;
+    margin: auto;
+    
+}
+div.content {
+    width: 400px;
+    display: inline-block;
+    padding:10px;
+    
+}
+div.rating {
+    width: 100px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+div.buttons {
+    vertical-align: top;
+    width: 90px;
+    display: inline-block
+}
+div.buttons {
+    text-align: center;
+}
+div.buttons button {
+    display: block;
+    width: 95px;
+    margin-bottom: 10px;
+}
+
+div.buttons button.up {
+    background-color: seagreen;
+    color: white;
+    margin-top: 5px;
+    
+}
+div.buttons button.down {
+    background-color: crimson;
+    color: white;
+}
+div.buttons button.delete {
+    background-color: black;
+    color: white;
+    
+}
